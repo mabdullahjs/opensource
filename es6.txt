@@ -1,0 +1,9 @@
+1. let and const
+Purpose: To declare block-scoped variables.
+let x = 10;
+const y = 20;
+
+
+2. Arrow Functions (=>)
+Purpose: Shorter function syntax and preserving this context.
+const add = (a,b) => a + b
