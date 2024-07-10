@@ -1,0 +1,104 @@
+Muhammad Abdullah Sir:
+
+Assalam-o-Alaikum students!
+
+Aaj hum web development industry mein open source ke bare mein baat karenge. 
+Open source software kya hota hai aur iske kya fayde hain, yeh hum discuss karenge.
+Yeh topic beginners ke liye bahut important hai, toh dhyan se sunna.
+
+
+Open Source Kya Hai?
+
+Open source software wo hota hai jiska source code sabke liye available hota hai.
+Matlab, koi bhi is code ko dekh sakta hai, use kar sakta hai, modify kar sakta 
+hai aur distribute kar sakta hai. Yeh completely free hota hai.
+
+
+Open Source Ke Fayde:
+
+Free Use aur Distribution: 
+Aap open source software ko bina paisa diye use kar sakte hain. Apne projects 
+mein is software ko use kar sakte hain aur kisi ko bhi distribute kar sakte hain.
+
+Community Support: 
+Open source software ke peeche ek badi community hoti hai jo isko maintain aur 
+improve karti hai. Agar aapko koi problem hoti hai, toh community aapki help kar 
+sakti hai.
+
+Transparency:
+Aap source code ko dekh sakte hain aur jaan sakte hain ke software kaise kaam 
+karta hai. Isme koi chupi hui cheez nahi hoti.
+
+Customization:
+Aap software ko apni zaroorat ke hisaab se customize kar sakte hain. Aap code ko
+modify karke naye features add kar sakte hain.
+
+
+
+Web Development Mein Popular Open Source Tools:
+
+HTML, CSS, aur JavaScript:
+Yeh tino open source technologies hain jo web pages banane mein use hoti hain.
+HTML se structure banta hai, CSS se styling aur layout, aur JavaScript se
+interactivity.
+
+Frameworks aur Libraries:
+
+React: 
+Yeh Facebook ne banaya hai. Yeh ek JavaScript library hai jo user interfaces 
+banane mein madad karti hai.
+
+Angular:
+Yeh Google ne banaya hai. Yeh ek framework hai jo single-page applications 
+banane mein madad karta hai.
+
+Vue.js:
+Yeh ek JavaScript framework hai jo reactive user interfaces banane ke 
+liye use hota hai.
+
+
+
+Backend Technologies:
+
+Node.js:
+Yeh ek JavaScript runtime hai jo server-side scripting ke liye use hota hai.
+
+Express.js:
+Node.js ke saath use hone wala ek web application framework hai jo APIs aur 
+web applications banane mein madad karta hai.
+
+
+Databases:
+
+MongoDB:
+Yeh ek NoSQL database hai jo flexible aur scalable data storage provide karta hai.
+
+MySQL:
+Yeh ek relational database hai jo data ko structured format mein store karta hai.
+
+
+Open Source Mein Contribute Karna:
+
+Aap bhi open source community ka hissa ban sakte hain aur apni contributions de 
+sakte hain:
+
+
+Bug Reports:
+Agar aapko koi bug milta hai, toh developers ko report kar sakte hain.
+
+Code Contributions: 
+Agar aap coding jaante hain, toh bugs fix kar sakte hain ya naye features add kar
+sakte hain.
+
+Documentation:
+Documentation improve karke doosre logon ke liye software use karna easy bana 
+sakte hain.
+
+
+Conclusion:
+
+Open source software web development industry ka ek important hissa hai. 
+Aapko open source tools aur technologies seekhna chahiye. Yeh aapke career ke
+liye bahut faydemand hoga. Agar aapko kisi bhi topic par aur detail chahiye ho 
+ya koi sawaal ho, toh mujhse zaroor puchhein. Main yahin hoon aapki madad ke
+liye. Best of luck!
