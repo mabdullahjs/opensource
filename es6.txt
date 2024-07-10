@@ -57,4 +57,35 @@ class Person {
 }
 
 
+9. Modules (import and export)
+Purpose: Dividing and including code across multiple files.
+// file1.js
+export const greet = (name) => `Hello, ${name}!`;
+
+// file2.js
+import { greet } from './file1';
+console.log(greet('John'));
+
+
+
+10. Promises
+Purpose: Managing asynchronous code.
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Data received');
+  }, 2000);
+});
+
+promise.then(data => console.log(data));
+
+
+11. Map and Set
+Purpose: Storing unique values and managing key-value pairs.
+const map = new Map();
+map.set('key', 'value');
+console.log(map.get('key'));
+
+const set = new Set([1, 2, 3, 3]);
+console.log(set.has(1)); // true
+
 
