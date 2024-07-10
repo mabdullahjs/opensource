@@ -7,3 +7,12 @@ const y = 20;
 2. Arrow Functions (=>)
 Purpose: Shorter function syntax and preserving this context.
 const add = (a,b) => a + b
+
+
+3. Template Literals
+Purpose: Easier string interpolation and multi-line strings.
+const name = 'John';
+const message = `Hello, ${name}!`;
+
+
+
