@@ -1,0 +1,91 @@
+1. let and const
+Purpose: To declare block-scoped variables.
+let x = 10;
+const y = 20;
+
+
+2. Arrow Functions (=>)
+Purpose: Shorter function syntax and preserving this context.
+const add = (a,b) => a + b
+
+
+3. Template Literals
+Purpose: Easier string interpolation and multi-line strings.
+const name = 'John';
+const message = `Hello, ${name}!`;
+
+
+4. Destructuring Assignment
+Purpose: Extracting values from arrays or objects.
+const [a, b] = [1, 2];
+const {name, age} = {name: 'John', age: 30};
+
+
+5. Default Parameters
+Purpose: Setting default values for function parameters.
+function greet(name = 'Guest') {
+  return `Hello, ${name}!`;
+}
+
+
+6. Spread Operator (...)
+Purpose: Copying and merging arrays and objects.
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+
+const obj1 = {a: 1, b: 2};
+const obj2 = {...obj1, c: 3};
+
+
+7. Rest Parameters
+Purpose: Handling an indefinite number of function arguments.
+function sum(...numbers) {
+  return numbers.reduce((acc, num) => acc + num, 0);
+}
+
+
+8. Classes
+Purpose: Object-oriented programming.
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+  }
+}
+
+
+9. Modules (import and export)
+Purpose: Dividing and including code across multiple files.
+// file1.js
+export const greet = (name) => `Hello, ${name}!`;
+
+// file2.js
+import { greet } from './file1';
+console.log(greet('John'));
+
+
+
+10. Promises
+Purpose: Managing asynchronous code.
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Data received');
+  }, 2000);
+});
+
+promise.then(data => console.log(data));
+
+
+11. Map and Set
+Purpose: Storing unique values and managing key-value pairs.
+const map = new Map();
+map.set('key', 'value');
+console.log(map.get('key'));
+
+const set = new Set([1, 2, 3, 3]);
+console.log(set.has(1)); // true
+
+
