@@ -15,4 +15,7 @@ const name = 'John';
 const message = `Hello, ${name}!`;
 
 
-
+4. Destructuring Assignment
+Purpose: Extracting values from arrays or objects.
+const [a, b] = [1, 2];
+const {name, age} = {name: 'John', age: 30};
