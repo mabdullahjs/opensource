@@ -1,0 +1,75 @@
+In JavaScript, data types are divided into two main categories: primitive and non-primitive (also known as reference types). Here’s a breakdown of these data types:
+
+Primitive Data Types
+Number
+
+Represents both integer and floating-point numbers.
+Examples: 42, 3.14
+String
+
+Represents a sequence of characters.
+Examples: "hello", 'world'
+Boolean
+
+Represents true or false.
+Examples: true, false
+Undefined
+
+Represents a variable that has been declared but not assigned a value.
+Example: let x; // x is undefined
+Null
+
+Represents the intentional absence of any object value.
+Example: let y = null;
+Symbol (introduced in ECMAScript 6)
+
+Represents a unique and immutable identifier.
+Example: let sym = Symbol('description');
+BigInt (introduced in ECMAScript 2020)
+
+Represents whole numbers larger than 2^53 - 1, which is the largest number JavaScript can safely represent with the Number primitive.
+Example: let bigInt = 1234567890123456789012345678901234567890n;
+Non-Primitive (Reference) Data Types
+Object
+
+Represents a collection of key-value pairs.
+Examples:
+javascript
+Copy code
+let person = { 
+  name: "John", 
+  age: 30 
+};
+Array
+
+A special type of object used for storing ordered collections of values.
+Example:
+javascript
+Copy code
+let fruits = ["apple", "banana", "cherry"];
+Function
+
+A block of code designed to perform a particular task.
+Example:
+javascript
+Copy code
+function greet() {
+  console.log("Hello, world!");
+}
+Date
+
+Represents date and time.
+Example:
+javascript
+Copy code
+let now = new Date();
+Special Cases
+Infinity and -Infinity
+
+Represents positive and negative infinity.
+Example: let inf = Infinity;
+NaN (Not-a-Number)
+
+Represents a value that is not a legal number.
+Example: let notANumber = NaN;
+Understanding these data types is crucial for effective JavaScript programming as it helps in managing and manipulating different kinds of data efficiently.
