@@ -5,7 +5,7 @@
 05-DOM-Manipulation
 06-Array
 07-Loops
-08-Todo-App
+08-Todo-App  ====> PROJECT
 09-Revision
 10-Strings-Methods
 11-Numbers-Methods
@@ -16,5 +16,7 @@
 17-Array-Loops
 18-Asynchronous
 19-JS-ES6
-21-Weather-App
+21-Weather-App  ====> PROJECT
 23-modules
+
+======= JAVASCRIPT COMPLETE =======
