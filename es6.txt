@@ -19,3 +19,11 @@ const message = `Hello, ${name}!`;
 Purpose: Extracting values from arrays or objects.
 const [a, b] = [1, 2];
 const {name, age} = {name: 'John', age: 30};
+
+
+5. Default Parameters
+Purpose: Setting default values for function parameters.
+function greet(name = 'Guest') {
+  return `Hello, ${name}!`;
+}
+
