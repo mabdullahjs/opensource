@@ -1,0 +1,63 @@
+step 1:
+git hub pr repository bna 
+
+step 2:
+git init => repository bna ni h folder m 
+
+step 3:
+git status => status check krte h (andr h kia or kia nhi h)
+
+step 4:
+git add . => files add hogi sari jtni bhi folder m h (. bhoolna nhi)
+
+step 5:
+git commit -m "jo bhi msg bhejna hu" 
+
+step 6: 
+git remote add origin (teri repository link ay gi / direct add from git hub) 
+
+step 7:
+git push origin master (agr ye work na kre tu mtlb koi error ay tu)
+git push origin master --force (means forcefully push kr waengay)
+
+
+
+
+
+Additional Steps :
+
+
+* add and commit using one command :    
+cmd : git commit -a -m "message"
+
+
+*Command to Check branches :
+cmd : git branch
+
+
+*Command to add branches :
+cmd : git branch 'branch name'
+
+
+*Command to remove branches :
+cmd : git branch -d branch name
+
+
+*Command to change branches :
+cmd : git checkout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
