@@ -1,0 +1,14 @@
+function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
+
+// Example usage
+const arr = [1, 2, 3, 4, 5];
+const shuffledArr = shuffleArray(arr);
+console.log(shuffledArr);
+
+this is the  easy shuffle array method.
+
+Contributed by Muhammad Huzaifa(GitHub account: MuhammadHuzaifa22)
+
+
