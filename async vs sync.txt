@@ -1,0 +1,128 @@
+
+                                [Synchronous VS Asynchronous]
+
+
+                                    "Synchronous JavaScript"
+
+
+Definition: Executes code sequentially, one statement at a time.
+
+Blocking: Subsequent operations wait for the current operation to complete.
+
+Execution Flow: Code execution follows the order in which it appears.
+
+Use Cases: Simple scripts where tasks are executed in order without requiring waiting for external operations.
+
+                                         "Example"
+
+function syncFunction() {
+    console.log("Step 1");
+    console.log("Step 2");
+    console.log("Step 3");
+}
+
+syncFunction();
+
+
+
+                                     "Asynchronous JavaScript"
+
+
+
+Definition: Executes code out of order, allowing other operations to run while waiting for some tasks to complete.
+
+Non-Blocking: Subsequent operations can start before previous ones finish.
+
+Execution Flow: Can be unpredictable as asynchronous tasks complete at different times.
+
+Use Cases: Network requests, file reading/writing, timers, event handling.
+
+          
+                                                "Methods"
+
+Callbacks: Functions passed as arguments to be executed later.
+
+Promises: Objects representing future values or 
+errors from asynchronous operations.
+
+Async/Await: Syntax sugar over promises for cleaner asynchronous code.
+
+              
+                                                 "Examples"
+
+                                             (Callbacks)
+
+function asyncFunction(callback) {
+    setTimeout(() => {
+        console.log("Async Step");
+        callback();
+    }, 1000);
+}
+
+console.log("Step 1");
+asyncFunction(() => console.log("Step 2"));
+console.log("Step 3");
+
+
+                                            (Promises)
+
+
+        
+               function asyncFunction() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Async Step");
+            resolve();
+        }, 1000);
+    });
+}
+
+console.log("Step 1");
+asyncFunction().then(() => console.log("Step 2"));
+console.log("Step 3");
+
+
+                                              (Async/Await)
+
+
+
+async function asyncFunction() {
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Async Step");
+            resolve();
+        }, 1000);
+    });
+}
+
+async function run() {
+    console.log("Step 1");
+    await asyncFunction();
+    console.log("Step 2");
+    console.log("Step 3");
+}
+
+run();
+
+
+
+                                         "Key Differences"
+                                         
+                                         (Execution Order)
+
+Synchronous: Ordered execution.
+
+Asynchronous: Potentially out-of-order execution.
+Blocking Behavior:
+
+Synchronous: Blocks subsequent code.
+
+Asynchronous: Allows subsequent code to run without waiting.
+                                
+                                           (Error Handling)
+
+Synchronous: Try/catch blocks.
+
+Asynchronous: Promises use .catch(), async/await uses try/catch blocks.
+
+
