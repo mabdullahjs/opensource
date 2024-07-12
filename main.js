@@ -1,5 +1,21 @@
+"use strict";
 // Introduction To Typescript
 // Typescript is a superset of Javascript 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -9,6 +25,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 // Variables (var, let , const)
 // There are 3 Types Of Variables var let and const
 var name1 = "Umar"; // Type Annotations or Explicit Type
@@ -103,3 +120,129 @@ func();
 // * Arrow Functions 
 var arrowFunc = function () { return 'This is Arrow Function'; };
 console.log(arrowFunc());
+// Nested Functions
+function hello() {
+    console.log('Hello World');
+}
+function printHello() {
+    hello();
+}
+printHello();
+// * Recursive Functions 
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    else {
+        return n * factorial(n - 1);
+    }
+}
+console.log(factorial(5)); // 120
+// * IIFE Concept 
+// Immediately Invoked Function Expression
+(function () {
+    console.log('IIFE Calling');
+})();
+// Objects 
+var obj = {
+    name: 'umar',
+    age: 16,
+};
+console.log(obj.name);
+console.log(obj['age']);
+// Type Aliases
+// Anonymous Type 
+var myobj = {
+    name: "Umar Farooq",
+    id: 123,
+    isStudent: true
+};
+var user = {
+    userName: "HamzaAliKhan112",
+    password: 1234,
+};
+console.log(user.userName, user.password);
+var num = "One"; // We dont Assign Anything Exept One Two Three
+console.log(num);
+// Union Types
+var dontKnow = "Anoosha";
+console.log(dontKnow);
+var rect = {
+    width: 100,
+    height: 200,
+    color: 'red'
+};
+console.log(rect.width); // 100
+console.log(rect.height); // 200
+console.log(rect.color); // "red"
+// 9) Enums 
+var Direction;
+(function (Direction) {
+    Direction[Direction["Left"] = 0] = "Left";
+    Direction[Direction["Right"] = 1] = "Right";
+    Direction[Direction["Top"] = 2] = "Top";
+    Direction[Direction["Bottom"] = 3] = "Bottom";
+})(Direction || (Direction = {}));
+console.log(Direction.Left); // 0
+// 10) Tuples
+var arr = [1, 2, 3];
+console.log(arr);
+// 12) Hoisting 
+hoisting();
+function hoisting() {
+    console.log('Function Calls First This is Hoisting');
+}
+// 16) Asynchronous Programming 
+// Callback 
+function callBack(callBack) {
+    callBack();
+}
+function print() {
+    console.log('This is Callback Function');
+}
+callBack(print); // Print is a callback Function
+// Promisses 
+// function prom() {
+//     return new Promise((resolve) => {
+//         resolve("Success");
+//     })
+// }
+// prom().then(res => {
+//     console.log(res);
+// });
+// Async Await 
+// function asyncAwait() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('This is Async Function');
+//         }, 2000)
+//     })
+// }
+// (async function () {
+//     await asyncAwait();
+// })();
+// OOPS
+var Animal = /** @class */ (function () {
+    function Animal(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    return Animal;
+}());
+var Dog = /** @class */ (function (_super) {
+    __extends(Dog, _super);
+    function Dog(name, age, skill) {
+        var _this = _super.call(this, name, age) || this;
+        _this.skill = skill;
+        return _this;
+    }
+    Dog.prototype.skills = function () {
+        console.log("".concat(this.name, " Skill is ").concat(this.skill));
+    };
+    return Dog;
+}(Animal));
+var dog = new Dog('Dog', 1, "Barks");
+console.log(dog.name);
+console.log(dog.age);
+console.log(dog.skill);
+dog.skills();
