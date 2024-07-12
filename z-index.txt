@@ -1,0 +1,12 @@
+This is the property of z-index in CSS 
+
+
+
+Imagine a layered cake, where the frosting on top conceals what's beneath. In CSS, the z-index property acts like frosting, controlling the stacking order of elements on a webpage. Elements with a higher z-index appear on top, obscuring those with a lower value. This creates a sense of depth and allows you to strategically overlap content.
+
+While simple in concept, z-index can be powerful. It's particularly useful for elements like dropdown menus, modal windows, and pop-up notifications. By assigning a high z-index to these elements, you ensure they appear above the rest of the page content, grabbing the user's attention.
+
+However, z-index can also lead to unintended consequences if not used carefully. Overlapping elements with conflicting z-index values can create a confusing visual hierarchy. To avoid this, it's recommended to use z-index sparingly and establish a clear stacking context for your page elements.
+
+Remember, z-index only works for positioned elements. Elements set to display: block or display: inline by default respect the document's natural flow and won't be affected by z-index. So, bake a beautiful and layered web page with the help of z-index, but use it judiciously!
+
