@@ -1,10 +1,6 @@
 // Introduction To Typescript
 // Typescript is a superset of Javascript 
 
-import { rejects } from "assert";
-import { error } from "console";
-import { resolve } from "path";
-
 // Variables (var, let , const)
 // There are 3 Types Of Variables var let and const
 
