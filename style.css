@@ -1,0 +1,122 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.d-block {
+    display: block;
+}
+
+.parent {
+    max-width: 550px;
+    margin-left: 50px;
+    /* background-color: #000; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.liststyle {
+    max-width: 550px;
+    margin-left: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    padding: 10px;
+    /* background-color: #000; */
+}
+
+.action {
+    float: right;
+    /* padding-right: 5px; */
+    display: block;
+
+}
+
+.action button {
+    padding: 7px 15px;
+    background-color: #CF2762;
+    border: 2px solid #CF2762;
+    border-radius: 8px;
+    color: #fff;
+}
+
+#inputTodo {
+    padding: 15px;
+    width: 420px;
+    background-color: transparent;
+    border: 1px solid #CF2762;
+    border-radius: 10px;
+    color: #000;
+
+}
+
+/* input Buttons */
+.btn {
+    padding: 15px 10px;
+    background-color: #CF2762;
+    border: 2px solid #CF2762;
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* input Buttons on Hover */
+.btn:hover {
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #CF2762;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: #CF2762;
+}
+
+ul {
+    padding: 15px;
+    border: 1px solid #CF2762;
+    border-radius: 10px;
+    color: #000;
+    padding-left: 40px;
+
+}
+
+/* Right Side  */
+.right_side {
+    padding: 60px 0px;
+    color: #9D9B9F;
+    line-height: 30px;
+}
+
+.clr {
+    color: #CF2762;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #e85c8d;
+
+
+}
+
+.footer {
+    height: 200px;
+
+    color: #fff;
+    padding-left: 20px;
+    font-size: 28px;
+    padding-top: 10px;
+    background-color: #CF2762;
+    text-align: center;
+}
