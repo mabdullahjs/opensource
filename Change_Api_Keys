@@ -1,0 +1,79 @@
+Title: Using a Class to Fetch Data from an API and Changing the API Key Dynamically
+Introduction
+In modern JavaScript applications, interacting with APIs to fetch and manage data is a common requirement. Using classes to encapsulate API interaction not only organizes your code but also enhances its reusability and maintainability. This guide demonstrates how to create a class for fetching data from an API and dynamically changing the API key used for requests.
+
+Step-by-Step Implementation
+Step 1: Define the User Class
+First, define a User class to structure the data fetched from the API:
+
+"class User {
+    constructor(data) {
+        this.cat = data.category;
+        this.desc = data.description;
+        this.img = data.image;
+        this.Rs = data.price;
+    }
+}"
+
+The User class constructor initializes properties (cat, desc, img, Rs) based on the data received from the API.
+
+Step 2: Fetching and Processing Data
+Next, implement the dataresponse function to fetch data from the API and process it using the User class:
+
+"const dataresponse = async () => {
+
+    try {
+        let data = await fetch("https://fakestoreapi.com/products");
+
+        let response = await data.json();
+        
+        console.log(response);
+         
+        const updateddata = response.map(user => new User(user));
+        
+       
+        console.log(updateddata); 
+        
+      
+        return updateddata;
+
+    } catch (error) {
+
+        console.log("Unable to fetch data", error);
+    }
+};
+
+ 
+dataresponse();"
+
+Explanation of dataresponse Function
+Asynchronous Function (async)
+
+The dataresponse function is defined as an asynchronous function using the async keyword. This allows the use of await inside the function to wait for promises to resolve before proceeding.
+
+Fetching Data from the API
+
+Fetch API: Initiates a GET request to the specified URL (https://fakestoreapi.com/products).
+
+Awaiting Response: Waits for the fetch operation to complete and stores the result in data.
+
+Parsing JSON Response
+
+data.json(): Converts the fetched data (data) into a JavaScript object (response) by parsing its JSON content.
+
+Mapping Data to User Instances
+
+Mapping Function: Uses response.map() to iterate through each object in the response array.
+
+Creating User Instances: For each object (user) in response, it creates a new instance of the User class using new User(user).
+
+Logging and Error Handling
+
+Logging: Logs the entire API response (console.log(response)) and the transformed data (console.log(updateddata)) for debugging purposes.
+
+Error Handling: The try-catch block catches and logs any errors that occur during the fetching or processing of data.
+
+Return Statement
+
+Return Data: Returns the updateddata array containing instances of the User class to the caller of the dataresponse function.
+
