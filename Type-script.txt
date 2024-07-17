@@ -1,0 +1,20 @@
+DEFINATION:
+           TypeScript is a programming language developed and maintained by Microsoft. It is a superset of JavaScript, which means any valid JavaScript code is also valid TypeScript code. TypeScript adds optional static typing and other features to JavaScript, making it more robust and suitable for large-scale application development.
+
+   Here are some key features and concepts of TypeScript:
+
+1:Static Typing: TypeScript introduces static typing, allowing developers to specify types for variables, function parameters, return values, and class members. This helps catch type-related errors at compile-time rather than at runtime, which can improve code quality and reduce bugs.
+
+2:Type Inference: TypeScript has a powerful type inference system that can infer types even if they are not explicitly specified. This reduces the need for explicit type annotations while still providing strong typing benefits.
+
+3:Interfaces and Classes: TypeScript supports interfaces and classes, which are used to define object structures and behaviors. Interfaces can define contracts that classes can implement, ensuring consistency and compatibility across different parts of the codebase.
+
+4:Enums: TypeScript includes support for enums, allowing developers to define a set of named constants. This can improve code readability and maintainability by providing meaningful names to numeric values.
+
+5:Generics: TypeScript supports generics, which enable writing flexible and reusable functions and data structures. Generics allow types to be parameterized, making it possible to create components that work with a variety of data types.
+
+6:ES6+ Features: TypeScript supports modern JavaScript features such as arrow functions, classes, modules, and async/await syntax. It allows developers to leverage the latest advancements in JavaScript while providing additional type safety.
+
+7:Tooling and IDE Support: TypeScript is supported by a rich ecosystem of tools, including code editors like Visual Studio Code, which provide features like code completion, refactoring, and error checking based on TypeScript's static typing.
+
+8:Compilation: TypeScript code is transpiled into plain JavaScript using the TypeScript compiler (tsc). This means that TypeScript code can run on any browser or JavaScript runtime that supports ECMAScript 3 or higher.
