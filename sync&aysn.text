@@ -1,0 +1,55 @@
+syncronus
+
+import os
+
+def read_file(file_path):
+    """Reads the content of a file and returns it."""
+    with open(file_path, 'r') as file:
+        return file.read()
+
+def main_sync():
+    files = ['file1.txt', 'file2.txt', 'file3.txt']
+    directory = 'path/to/your/files'
+
+    for file_name in files:
+        file_path = os.path.join(directory, file_name)
+        content = read_file(file_path)
+        print(f"Content of {file_name}:")
+        print(content)
+        print('-' * 20)
+
+if __name__ == "__main__":
+    main_sync()
+
+
+
+    asyncronus
+
+
+    import os
+import asyncio
+
+async def read_file_async(file_path):
+    """Reads the content of a file asynchronously and returns it."""
+    loop = asyncio.get_event_loop()
+    with open(file_path, 'r') as file:
+        content = await loop.run_in_executor(None, file.read)
+    return content
+
+async def main_async():
+    files = ['file1.txt', 'file2.txt', 'file3.txt']
+    directory = 'path/to/your/files'
+
+    tasks = []
+    for file_name in files:
+        file_path = os.path.join(directory, file_name)
+        tasks.append(read_file_async(file_path))
+
+    contents = await asyncio.gather(*tasks)
+    for file_name, content in zip(files, contents):
+        print(f"Content of {file_name}:")
+        print(content)
+        print('-' * 20)
+
+if __name__ == "__main__":
+    asyncio.run(main_async())
