@@ -1,0 +1,85 @@
+               Suffle Array With All Ways
+
+
+     1. Using Fisher-Yates (Knuth) Shuffle Algorithm
+
+function shuffleArrayFisherYates(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+    }
+    return arr;
+}
+
+// Usage
+const array1 = [1, 2, 3, 4, 5];
+console.log(shuffleArrayFisherYates(array1));
+
+
+         2. Using sort() with Math.random()`
+
+
+function shuffleArraySort(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+}
+
+// Usage
+const array2 = [1, 2, 3, 4, 5];
+console.log(shuffleArraySort(array2));
+
+          3. Using a While Loop
+
+
+function shuffleArrayWhile(arr) {
+    let currentIndex = arr.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle
+    while (currentIndex !== 0) {
+        // Pick a remaining element
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element
+        temporaryValue = arr[currentIndex];
+        arr[currentIndex] = arr[randomIndex];
+        arr[randomIndex] = temporaryValue;
+    }
+
+    return arr;
+}
+
+// Usage
+const array3 = [1, 2, 3, 4, 5];
+console.log(shuffleArrayWhile(array3));
+
+
+            4. Using Modern ES6+ Syntax with reduce
+
+
+
+function shuffleArrayReduce(arr) {
+    return arr.reduce((shuffled, _, i) => {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        return shuffled;
+    }, [...arr]);
+}
+
+// Usage
+const array4 = [1, 2, 3, 4, 5];
+console.log(shuffleArrayReduce(array4));
+   
+
+        5. Using a Functional Approach
+
+function shuffleArrayFunctional(arr) {
+    return Array.from(arr)
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
+}
+
+// Usage
+const array5 = [1, 2, 3, 4, 5];
+console.log(shuffleArrayFunctional(array5));
+
