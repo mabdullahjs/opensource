@@ -1,0 +1,62 @@
+1) Introduction To Typescript 
+2) Variables (var, let , const)
+3) Basic Opearators 
+* Arithmetic Operators
+* Assignment Operators 
+* Uranary Opearators 
+* Comparison Opearators 
+* Logical Opearators
+* Ternary Opearators 
+* Spread Opearators 
+4) If Else And Switch Statements 
+5) Arrays
+6) Loops
+* For Loop 
+* For Of Loop 
+* For In Loop 
+* While Loop 
+* Do While Loop 
+7) Functions 
+* Returning Function Values 
+* Parameters And Arguments 
+* Optional Parameters 
+* Default Parameters 
+* Rest Parameters 
+* Arrow Functions 
+* Anonymous Functions 
+* Nested Functions 
+* Recursive Functions 
+* Function Overloading
+* IIFE Concept 
+8) Objects 
+* Nested Objects 
+* Type Aliases 
+* Type Litrals 
+* Type Unions
+* Type Intersection 
+9) Enums 
+10) Tuples
+11) Scopes 
+* Global Scopes 
+* Local Scopes
+12) Hoisting 
+13) Modules 
+* Export And Import 
+* Inquirer 
+14) Errors 
+* Syntax Error 
+* Type Error 
+* Assignibility Error 
+15) Type System 
+* Basic Types ( string , number , Boolean etc) 
+* Type Inference 
+* Type Annotation 
+* Implicit Type 
+* Explicit Type 
+* Any Or Unknown Type 
+16) Asynchronous Programming 
+* Callbacks 
+* Promises 
+* Async And Await 
+17) OOP (Object Oriented Programming)
+* Classes And Objects
