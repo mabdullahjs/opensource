@@ -1,0 +1,104 @@
+GITHUB COMMANDS:
+
+
+git clone
+
+Description: Clone a repository from GitHub to your local machine.
+Usage: git clone <repository_url>
+
+
+git init
+
+Description: Initialize a new Git repository locally.
+Usage: git init
+
+
+git add
+
+Description: Add file changes to the staging area to be included in the next commit.
+Usage: git add <file(s)>
+
+
+git commit
+
+Description: Record changes to the repository with a descriptive message.
+Usage: git commit -m "Commit message"
+git push
+
+Description: Upload local repository changes to a remote repository (like GitHub).
+Usage: git push origin <branch_name>
+
+
+git pull
+
+Description: Fetch and merge changes from the remote repository to your local branch.
+Usage: git pull origin <branch_name>
+
+
+git branch
+
+Description: List, create, or delete branches within your repository.
+Usage:
+List branches: git branch
+Create a branch: git branch <branch_name>
+Delete a branch: git branch -d <branch_name>
+
+
+git checkout
+
+Description: Switch branches or restore working tree files.
+Usage:
+Switch branches: git checkout <branch_name>
+Restore files: git checkout -- <file(s)>
+
+
+git merge
+
+Description: Combine changes from different branches into the current branch.
+Usage: git merge <branch_name>
+
+
+git status
+
+Description: Show the current state of the repository (tracked, untracked files, etc.).
+Usage: git status
+
+
+git log
+
+Description: Show commit logs.
+Usage: git log
+
+
+git remote
+
+Description: Manage set of tracked repositories.
+Usage:
+List remote repositories: git remote -v
+Add a remote repository: git remote add <name> <url>
+
+
+git fetch
+
+Description: Download objects and refs from another repository.
+Usage: git fetch <remote>
+
+
+git restore
+
+Description: Restore working tree files.
+Usage: git restore <file(s)>
+
+
+git config
+
+Description: Set up Git configuration options.
+Usage:
+Set user name: git config --global user.name "Your Name"
+Set user email: git config --global user.email "your.email@example.com"
+
+
+git help
+
+Description: Display help information about Git commands.
+Usage: git help <command>
