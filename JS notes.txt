@@ -1,0 +1,186 @@
+Sure, here's a cheatsheet on JavaScript functions that you can use as a reference. You can copy this text into a text document.
+
+---
+
+# JavaScript Functions Cheatsheet
+
+## Function Declaration
+
+```javascript
+function functionName(parameters) {
+  // function body
+}
+```
+
+- **Named function**: Can be called before it is defined due to hoisting.
+- **Example**:
+```javascript
+function add(a, b) {
+  return a + b;
+}
+```
+
+## Function Expression
+
+```javascript
+const functionName = function(parameters) {
+  // function body
+};
+```
+
+- **Anonymous function**: Function without a name.
+- **Example**:
+```javascript
+const multiply = function(a, b) {
+  return a * b;
+};
+```
+
+## Arrow Functions
+
+```javascript
+const functionName = (parameters) => {
+  // function body
+};
+```
+
+- **Shorter syntax**: No `this` binding.
+- **Example**:
+```javascript
+const subtract = (a, b) => a - b;
+```
+
+## Immediately Invoked Function Expression (IIFE)
+
+```javascript
+(function() {
+  // function body
+})();
+```
+
+- **Executed immediately** after creation.
+- **Example**:
+```javascript
+(function() {
+  console.log("IIFE executed!");
+})();
+```
+
+## Functions as First-Class Citizens
+
+- **Functions can be assigned to variables**:
+```javascript
+const divide = function(a, b) {
+  return a / b;
+};
+```
+
+- **Functions can be passed as arguments**:
+```javascript
+function applyOperation(a, b, operation) {
+  return operation(a, b);
+}
+applyOperation(10, 5, add); // 15
+```
+
+- **Functions can be returned from other functions**:
+```javascript
+function createMultiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+const double = createMultiplier(2);
+double(5); // 10
+```
+
+## Default Parameters
+
+```javascript
+function greet(name = "Guest") {
+  return `Hello, ${name}!`;
+}
+```
+
+- **Default value** if no argument is provided.
+- **Example**:
+```javascript
+greet(); // Hello, Guest!
+greet("Alice"); // Hello, Alice!
+```
+
+## Rest Parameters
+
+```javascript
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+```
+
+- **Collects all remaining arguments** into an array.
+- **Example**:
+```javascript
+sum(1, 2, 3, 4); // 10
+```
+
+## The `this` Keyword
+
+- **In a method**:
+```javascript
+const person = {
+  name: "Alice",
+  greet() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+person.greet(); // Hello, Alice!
+```
+
+- **In an arrow function** (no own `this`):
+```javascript
+const person = {
+  name: "Bob",
+  greet: () => {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+person.greet(); // Hello, undefined!
+```
+
+## Higher-Order Functions
+
+- **Functions that operate on other functions**, either by taking them as arguments or by returning them.
+- **Example**:
+```javascript
+function filter(array, test) {
+  const passed = [];
+  for (const element of array) {
+    if (test(element)) {
+      passed.push(element);
+    }
+  }
+  return passed;
+}
+const isEven = number => number % 2 === 0;
+filter([1, 2, 3, 4], isEven); // [2, 4]
+```
+
+## Callback Functions
+
+- **Function passed as an argument** to another function.
+- **Example**:
+```javascript
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = "Some data";
+    callback(data);
+  }, 1000);
+}
+fetchData((data) => {
+  console.log(data); // Some data
+});
+```
+
+---
+
+This cheatsheet covers the basics of JavaScript functions, including declarations, expressions, arrow functions, IIFEs, higher-order functions, and more. You can expand on it as needed for your projects or study purposes.
