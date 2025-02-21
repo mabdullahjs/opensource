@@ -1,0 +1,142 @@
+                                    CLASSES OF JAVASCRIPT
+1. Encapsulation
+Encapsulation is the bundling of data (properties) and methods (functions) that operate on the data into a single unit or class. It also involves restricting access to some of the object's components, which can help prevent unintended interference and misuse.
+
+Example:
+class Person {
+  constructor(name, age) {
+    this.name = name; // public property
+    this._age = age;  // conventionally private property
+  }
+
+  // Getter for age
+  get age() {
+    return this._age;
+  }
+
+  // Setter for age
+  set age(value) {
+    if (value > 0) {
+      this._age = value;
+    } else {
+      console.log('Age must be positive.');
+    }
+  }
+
+  // Public method
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+const person = new Person('Alice', 30);
+person.greet(); // Output: Hello, my name is Alice
+console.log(person.age); // Output: 30
+person.age = 25; // Updates age
+console.log(person.age); // Output: 25
+person.age = -5; // Output: Age must be positive.
+
+
+2. Inheritance
+Inheritance allows a class (child class) to inherit properties and methods from another class (parent class). This promotes code reuse and hierarchical classification.
+
+Example:
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name); // Call the parent constructor
+    this.breed = breed;
+  }
+
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const dog = new Dog('Rex', 'German Shepherd');
+dog.speak(); // Output: Rex barks.
+
+
+3. Polymorphism
+Polymorphism allows objects of different classes to be treated as objects of a common super class. It provides a way to perform a single action in different forms.
+
+Example:
+class Animal {
+  speak() {
+    console.log('Animal makes a sound.');
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log('Dog barks.');
+  }
+}
+
+class Cat extends Animal {
+  speak() {
+    console.log('Cat meows.');
+  }
+}
+
+function makeAnimalSpeak(animal) {
+  animal.speak();
+}
+
+const dog = new Dog();
+const cat = new Cat();
+
+makeAnimalSpeak(dog); // Output: Dog barks.
+makeAnimalSpeak(cat); // Output: Cat meows.
+
+
+4. Abstraction
+Abstraction involves hiding the complex implementation details and showing only the essential features of the object. This helps in reducing programming complexity and effort.
+
+Example:
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+
+  // Abstract method
+  drive() {
+    console.log(`Driving a ${this.make} ${this.model}`);
+  }
+
+  // Abstract method
+  start() {
+    console.log('Starting the car');
+  }
+}
+
+class ElectricCar extends Car {
+  constructor(make, model, batteryLife) {
+    super(make, model);
+    this.batteryLife = batteryLife;
+  }
+
+  // Overriding the drive method
+  drive() {
+    console.log(`Driving an electric ${this.make} ${this.model} with battery life ${this.batteryLife}`);
+  }
+
+  // Overriding the start method
+  start() {
+    console.log('Starting the electric car');
+  }
+}
+
+const myCar = new ElectricCar('Tesla', 'Model S', '85%');
+myCar.start(); // Output: Starting the electric car
+myCar.drive(); // Output: Driving an electric Tesla Model S with battery life 85%
