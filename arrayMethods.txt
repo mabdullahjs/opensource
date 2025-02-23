@@ -1,0 +1,78 @@
+ "ARRAY METHODS"
+
+1-- push adds a value to the end of an array.
+Example syntax:
+               var fruits = ["mango" , "apple" , "peach" , "pineapple" , "guava" , "strawberry will be add here"];
+fruits.push("strawberry");
+console.log(fruits);
+
+2-- pop removes a value from end of an array.
+Example syntax:
+               var fruits = ["mango" , "apple" , "peach" , "pineapple" , "guava"];
+fruits.pop();
+console.log(fruits);
+
+3-- unshift adds a value to the beginning of an array.
+Example syntax:
+               var fruits = ["grapes will be add here" , "mango" , "apple" , "peach" , "pineapple" , "guava"];
+fruits.unshift("grapes");
+console.log(fruits);
+
+4-- shift removes a value from beginning of an array.
+Example syntax:
+               var fruits = [ "mango" , "apple" , "peach" , "pineapple" , "guava"];
+fruits.shift();
+console.log(fruits);
+
+5-- With splice, you can delete any value from the middle and also add your own value in place of any other value.
+Example: (startindex , no of values to delete , Whatever you need to add, write it here..)
+Example syntax: 
+               var fruits = [ "mango" , "apple" , "peach" , "pineapple" , "guava"];
+fruits.splice(2 , 1);
+console.log(fruits);
+
+6-- With slice, we can pick pieces from the middle of an array, 
+Example: slice (startindex , endindex);
+Example syntax:
+                var fruits = [ "mango" , "apple" , "peach" , "pineapple" , "guava" , "strawberry" , "rasberry" , "melon"];
+fruits.slice(3 , 6);
+console.log(fruits);
+
+7-- split convert string into an array.
+Example syntax:
+               var str = "abcdefgh"
+console.log(str.split(""));
+
+8-- join convert array into an string.
+Example syntax:
+               var arr = ["muhammad" , "Hassan" , "Munawwar"]
+console.log(arr.join(" "));
+
+9-- concat join two or more than two arrays.
+Example syntax:
+               var arr1 = [ 1, 2 ,3];
+var arr2 = [ 4, 5, 6];
+var finalArr = arr1.concat(arr2);
+console.log(finalArr);
+
+10-- sort is used for sorting in array.
+Example syntax:
+               var numbers = [1, 5, 3, 8, 2];
+console.log(numbers.sort());
+--values will be sort like this: 1 , 2 , 3 , 5 , 8.
+
+11- Reverse changes the values to the opposite order.
+Example syntax: 
+               var string = "abcdefg";
+console.log(string.split("").reverse());
+
+12-- indexof is used to identify the index of any value.
+Example syntax:
+               var arr = ["apple" , "mango" , "peach" , "banana" , "cherry"];
+console.log(arr.indexOf("peach"));
+--It will return -1 if no value mathes in array.
+
+13-- Includes returns true or false. It will return false if you add a value that is not defined in the array, and it will return true if you add a value that is defined in the array
+Example syntax: 
+              1-- var arr = ["apple" , "mango" , "peach" , "banana" , "cherry"];
+console.log(arr.includes("peach"));
