@@ -1,0 +1,20 @@
+                           ↑ ↓ → ← function
+
+
+An arrow function in JavaScript is a more concise way of writing a function expression. It was introduced in ES6 (ECMAScript 2015) and provides a shorter syntax compared to traditional function expressions. Here's a basic syntax comparison:
+
+Traditional function expression:
+```javascript
+const traditionalFunc = function(parameters) {
+    // function body
+};
+```
+
+Arrow function expression:
+```javascript
+const arrowFunc = (parameters) => {
+    // function body
+};
+```
+
+Arrow functions are especially handy for shortening code and maintaining a cleaner syntax, especially when dealing with functions that have a simple single statement body. They also handle the `this` keyword differently, which can be beneficial in certain contexts, such as in callbacks or when working with object methods.
